@@ -1,12 +1,3 @@
-var element = React.createElement('div', {},
-    React.createElement('h1', {}, 'Lista Filmów'),
-    React.createElement('ul', {}, moviesElements),
-    React.createElement('p', {}, 'nie wyświetla listy? :(')
-);
-
-
-ReactDOM.render(element, document.getElementById('app'));
-
 
 var movies = [
     {
@@ -27,4 +18,16 @@ var moviesElements = movies.map(function(movie) {
         React.createElement('p', {}, movie.desc)
     );
 });
+
+
+
+var element = React.createElement('div', {},
+    React.createElement('h1', {}, 'Lista Filmów'),
+    React.createElement('ul', {}, moviesElements),
+    React.createElement('p', {}, 'nie wyświetla listy? :(')
+);
+
+
+ReactDOM.render(element, document.getElementById('app'));
+
 
